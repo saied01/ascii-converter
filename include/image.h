@@ -15,7 +15,7 @@ typedef struct
   int width;
   int height;
   uint8_t *pixels;
-  uint8_t channels;
+  uint16_t bits_per_pixel;
   img_type type;
 } img_t;
 

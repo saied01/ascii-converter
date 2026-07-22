@@ -1,5 +1,5 @@
-#include "image-parser.h"
-#include "bmp/bmp.h"
+#include "image.h"
+#include "bmp.h"
 #include <stdint.h>
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int parse_img(const char *path, img_t *out)
   if (!f)
     return -1;
 
-  char type[3];
+  char type[3] = {0};
   if (fread(type, 1, 2, f) != 2)
     return -1;
 
