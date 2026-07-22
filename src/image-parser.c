@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-int parse_img(const char *path, struct img *out)
+int parse_img(const char *path, img_t *out)
 {
   FILE *f = fopen(path, "rb");
   if (!f)
